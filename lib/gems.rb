@@ -3,6 +3,9 @@ require 'gems/configuration'
 
 module Gems
   extend Configuration
+
+  class Error < StandardError; end
+
   class << self
     # Alias for Gems::Client.new
     #
